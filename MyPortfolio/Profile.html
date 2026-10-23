@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Khansa Laraib</title>
+
+    <style>
+
+        body {
+            background-color: #f5f0ff;
+            color: #30263d;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+             background: linear-gradient(
+             rgba(40, 20, 60, 0.45),
+             rgba(40, 20, 60, 0.45) ), url("./Background.png");
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             min-height: 250px;
+             color: #f0d9ff;
+             text-align: center;
+             padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #f7f2ff;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin: 25px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #6947c6;
+            font-size: 28px;
+        }
+
+        p {
+            color: #51465e;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        ul {
+            color: #51465e;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ded3ff;
+        }
+        .contact-content{
+            display: flex;
+            align-items: center;
+            justify-self: space-between;
+            gap:30px;
+            flex-wrap: wrap;
+        }
+        .contact-text{
+            flex:1;
+            min-width: 250px;
+            overflow-wrap: anywhere;
+    
+        }
+        .contact-text a {
+            color:#3156a3;
+        }
+
+        .email-button {
+              display: inline-block;
+              margin-top: 12px;
+              padding: 13px 28px;
+              background-color: #2e8b57;
+              color: #ffffff !important;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: bold;
+              border: none;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(46, 139, 87, 0.25);
+              transition: all 0.3s ease;
+        }
+       .email-button:hover {
+                background-color: #246b45;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 14px rgba(46, 139, 87, 0.3);
+        }
+        footer {
+            background-color: #7657d9;
+            text-align: center;
+            padding: 25px;
+            color: white;
+            margin-top: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 15px;
+        }
+        .about-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .about-text{
+            flex: 1;
+            min-width: 250px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+        .about-image img{
+            width: 100%;
+            max-width: 320px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        /* Education Section */
+#       #education {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #eee3f7;
+            color: #38204d;
+        }
+
+       #education h2 {
+    color: #65358b;
+    font-size: 30px;
+    margin-bottom: 30px;
+       }
+
+      .education-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            flex-wrap: wrap;
+       }
+
+        .education-card {
+            background-color: #ffffff;
+            width: 260px;
+            padding: 18px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(65, 35, 90, 0.18);
+            transition: transform 0.3s ease;
+        }
+
+.education-card:hover {
+    transform: translateY(-6px);
+}
+
+.education-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.education-card h3 {
+    color: #713e91;
+    margin-top: 18px;
+}
+
+.education-card p {
+    color: #51445b;
+    line-height: 1.5;
+}
+/* My Skills - Text Left, Picture Right */
+.picture-section .picture-container {
+    background-color: #eee3f7;
+    padding: 35px;
+    border-radius: 15px;
+}
+.picture-section h2{
+    color:#6947c6;
+    margin-bottom: 25px;
+}
+.picture-section .picture-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.picture-section .picture-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(65, 35, 90, 0.12);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.picture-section .picture-card img {
+    width: 40%;
+    height: 200px;
+    object-fit: cover;
+    order: 2;
+    border-radius: 12px;
+}
+
+.picture-section .picture-card h3{
+    color:#6947c6;
+    font-size: 21px;
+    flex:1;
+}
+.picture-section .picture-card p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.picture-section .picture-card img{
+    width:200px;
+    height:140px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .picture-section .picture-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .picture-section .picture-card img {
+        width: 100%;
+        height: 170px;
+    }
+}
+/* Small Hobby Card */
+.hobby-card {
+    width: 300px;
+    height: 320px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hobby-card h3 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.hobby-card p {
+    font-size: 16px;
+    margin: 0;
+}
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.hobby-card {
+    width: 280px;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="c:\Users\khan computers\Downloads\IMG-20260518-WA0020.png"
+             alt="khansa laraib"
+             class="profile-pic">
+        <h1>Khansa Laraib</h1>
+        <p>BS IT Student | Web Developer</p>
+    </header>
+
+    <hr>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a BS IT student interested in web development
+                    and technology. I enjoy learning new skills and
+                    exploring the world of technology.
+                </p>
+            </div>
+        <div class="about-image">
+             <img src="study.png" alt="My Coding Setup">
+        </div>
+     </div>
+    </section>
+
+    <hr>
+
+    <section id="education">
+    <h2>My Education</h2>
+
+    <div class="education-container">
+
+        <!-- School -->
+        <div class="education-card">
+            <img src="school.png" alt="My School">
+
+            <h3>Matriculation</h3>
+            <p>F.G. Public School</p>
+            <p>Abdul Hakim Cantt</p>
+        </div>
+
+        <!-- College -->
+        <div class="education-card">
+            <img src="college.png" alt="My College">
+
+            <h3>Intermediate (ICS)</h3>
+            <p>Punjab College</p>
+            <p>Abdul Hakim</p>
+        </div>
+
+        <!-- University -->
+        <div class="education-card">
+            <img src="university.png" alt="My University">
+
+            <h3>BS Information Technology</h3>
+            <p>The Islamia University</p>
+            <p>of Bahawalpur</p>
+            <p>Currently Studying</p>
+        </div>
+
+    </div>
+</section>
+    <section>
+        <h2>Family Introduction</h2>
+
+        <p>Father: 
+            Gulam Muratza Shakir</p>
+        <p>Mother: Samra Kosar</p>
+        <p>Brothers: 3</p>
+
+        <p>
+            I come from a loving and close-knit family.
+        </p>
+    </section>
+
+    <hr>
+
+    <section class="picture-section">
+        <h2>My Skills</h2>
+        <div class="picture-container">
+            <div class="picture-card">
+                <img src="skills.png" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Creating simple and beautiful website.</p>
+            </div>
+    </section>
+
+    <hr>
+    <section id="Hobbies">
+    <h2>My Hobbies</h2>
+
+    <div class="hobbies-container">
+        <div class="hobby-card">
+            <img src="reading.png" alt="Book Reading">
+            <h3>Book Reading</h3>
+            <p>Exploring stories and fictional worlds.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="photography.png" alt="Photography">
+            <h3>Photography</h3>
+            <p>Capturing beautiful moments.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="video.png" alt="Video Editing">
+            <h3>Video Editing</h3>
+            <p>Turning moments into creative videos.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section class="picture-section">
+    <h2>My Favorite Subject</h2>
+
+    <div class="picture-container">
+        <div class="picture-card">
+            <img src="computer.png" alt="Computer">
+            <h3>Computer Science</h3>
+            <p>
+                My favorite subject is computer Science
+                because I love technology and computers.
+            </p>
+        </div>
+       </div>
+    </section>  
+
+    
+    <hr>
+
+    <section>
+        <h2>Career Goal</h2>
+
+        <p>
+            My goal is to become a successful IT Professional.
+        </p>
+    </section>
+
+    <hr>
+
+    <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-content">
+        <div class="contact-text">
+            <p>Feel free to contact me for any queries or collaboration.</p>
+
+            <p>
+                Email:
+                <a href="mailto:sawerashakir512@gmail.com">
+                    sawerashakir512@gmail.com
+                </a>
+            </p>
+
+            <a class="email-button"
+               href="mailto:sawerashakir512@gmail.com">
+                Email Me
+            </a>
+        </div>
+    </div>
+</section>
+    <footer>
+        <p>© 2026 Khansa Laraib. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
